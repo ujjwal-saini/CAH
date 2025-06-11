@@ -1,0 +1,223 @@
+*{
+    margin: 0%;
+    padding: 0%;
+     font-family: "Roboto", sans-serif;
+}
+header{
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.cah{
+    font-size: 25px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.247);
+    padding: 20px;
+   
+}
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+
+}
+
+.container{
+ margin-left: 80px;
+ font-size: 30px;
+ padding-top: 80px;
+}
+.container h1{
+margin-bottom: 30px;
+color: #fff;
+}
+
+.para{
+    width: 40%;
+    font-size: 24px;    
+    color: white;
+ display: flex;
+flex-wrap: wrap;
+}
+
+.horizontalline{
+    border-top: 1.5px solid gray;
+    width: 50%;
+    margin:40px 0px 28px 0px;
+}
+
+
+.socialmediabtn{
+
+    margin-bottom: 200px;
+}
+.inslogo,.fblogo ,.ldlogo{
+    background-image: url('../images/insta.jpg');
+    height: 40px;
+    width:40px;
+    background-size: cover;
+border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+.fblogo{
+    background-image: url('../images/fb.jpg');
+}
+.ldlogo{
+    background-image: url('../images/ld.jpg');
+}
+.container h1{
+text-transform: uppercase;
+}
+.box img, h1, p{
+    padding-bottom: 20px;
+}
+.box p{
+    color: gray;
+   
+}
+.secondsection{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 200px 200px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.divider{
+    border-right: 1px solid lightgray;
+    margin: 0px 40px;
+}
+.roketicon{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.coursor{
+    background-color:  #140748;;
+    padding-left: 100px;
+    
+}
+.coursor-content{
+   display: flex;
+   flex-direction: row-reverse;
+    justify-content:center;
+    align-items: center;
+}
+.coursor-text{
+    display: flex;
+    flex-direction: column;
+}
+.coursor img{
+    width: 120px;
+    height: 120px;
+    margin-top: 50px;
+    margin-right: 300px;
+}
+.coursor h1{
+    font-size: 30px;
+padding: 100px 0px 20px 0px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.coursor p{
+width: 50%;
+font-size: 20px;
+padding-bottom: 100px;
+}
+
+
+
+
+
+
+.fourthsection{
+    height: 100vh;
+    width:100vh;
+    display:grid;
+    grid-template-columns: auto auto;
+   
+} .first-box{
+    background-image: url('../images/bg3.jpg');
+        background-size: cover;
+        height:100%;
+        width: 100vh;
+}
+.second-box{
+    padding-left: 100px;
+    width: 100%;
+}
+.second-box  h1{
+    font-size: 35px;
+    margin: 100px 0px 30px 0px;
+text-transform: uppercase;
+text-wrap: nowrap;
+
+}
+.second-box p{
+    margin-bottom: 20px;
+}
+.second-box h3{
+    font-size: 20px;
+    width: 50%;
+    margin-bottom: 30px;
+    text-wrap: nowrap;
+}
+.second-box button{
+    background-color:rgb(1, 1, 71);
+    height: 40px;
+    width :140px;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;;
+}
+
+.fifthsection{
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+.fifth-one{
+   
+}
+
+ .education-text{
+    font-size: 50px;
+   margin: 100px 0px 30px 0px;
+    font-weight: 700;
+}
+.edu-one-two h1{
+    font-size: 30px;
+}
+.edu-one-one{
+    border: 2px solid #000;
+    height: 100%;
+}
+.edu-one{
+    display: flex;
+     border: 2px solid #000;
+}
+
+
+.edu-one-one{
+    height:200px;
+    width:100px;
+}
+.fifth-secondimg{
+    height: 100vh;
+}
