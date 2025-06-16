@@ -5,26 +5,35 @@
       /* box-sizing: border-box; */
 }
 header{
-    background-image: url('../images/bg.jpg');
+    background-image: url('../images/whitelaptop.jpg');
     background-size: cover;
     background-blend-mode: multiply;
-    background-color:rgba(0, 0, 0, 0.473);
+    background-color:rgba(0, 0, 0, 0.39);
 }
 .cah{
-    font-size: 33px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 500;
+     font-family: "Edu VIC WA NT Hand Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin-left:10px;
+  cursor: pointer;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     color:white;
-    background-color: rgba(0, 0, 0, 0.247);
-    padding: 24px;
-   
+    background-color: rgba(0, 0, 0, 0.336);
+    padding: 14px;
+}
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
 nav a {
-    margin-left: 30px;
     text-decoration: none;
     color: white;
     font-size: 21px;
@@ -51,15 +60,14 @@ flex-wrap: wrap;
 }
 
 .horizontalline{
-    border-top: 1.5px solid gray;
+    border-top: 1.5px solid rgba(128, 128, 128, 0.438);
     width: 50%;
     margin:40px 0px 28px 0px;
 }
 
 
 .socialmediabtn{
-
-    margin-bottom: 200px;
+    margin: 50px 0px 230px 0px;
 }
 .inslogo,.fblogo ,.ldlogo{
     background-image: url('../images/insta.jpg');
@@ -81,7 +89,10 @@ border-radius: 5px;
 text-transform: uppercase;
 }
 .box img h1 p{
-    padding-bottom: 20px;
+    padding-bottom: 18px;
+}
+.box h1{
+    font-size: 20px;
 }
 .box p{
     color: gray;
@@ -104,33 +115,36 @@ text-transform: uppercase;
 }
 /*   coursor slider */
 
-.carousel {
-    background: white;
-    padding: 2rem 0;
-    height: 100px;
+.image-scroller img {
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
 }
-
-.carousel-container {
+.imageslider{
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    overflow: hidden;
-    max-width: 1000px;
-    margin: auto;
+}
+.image-scroller {
+  display: flex; 
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding: 10px;
+  width: 90%;
+  margin-bottom: -70px;
 }
 
-.carousel-track {
-    display: flex;
-    gap: 1rem;
-    transition: transform 0.5s ease;
+.image-scroller:hover {
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
-.carousel-track img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
+.image-scroller:hover::-webkit-scrollbar {
+  height: 0px;
 }
 
 .nav {
@@ -157,7 +171,6 @@ text-transform: uppercase;
     text-align: center;
     margin-top: 1rem;
 }
-xsdkn
 
 .dot {
     height: 8px;
@@ -220,8 +233,8 @@ padding-bottom: 100px;
     grid-template-columns: auto auto;
    
 } .first-box{
-    background-image: url('../images/bg3.jpg');
-        background-size: cover;
+    background-image: url('../images/aboutus.jpg');
+        background-size:cover;
         height:100%;
         width: 100vh;
 }
@@ -395,7 +408,13 @@ text-transform: uppercase;
     flex-direction: column;
     align-items: center;
 }
-
+.seventwoimgupper h1{
+    font-size: 20px;
+    font-weight: 800;
+    color: #140748;
+    margin: 5px 0px 20px 0px;
+    text-transform: uppercase;
+}
  .seventwo{
 display: grid;
 grid-template-columns: auto auto auto auto;
@@ -463,19 +482,41 @@ position:relative;
    gap:15px;
    align-items: center;
    bottom: 125px;
+   width:  100%;
 }
 .tenbox{
     display: grid;
     grid-template-rows: auto auto auto;
     align-items: center;
-    padding: 10px 50px;
+    padding:10px 20px;
     justify-content: center;
-height: 210px;
-width: 230px;
+height: 300px;
+width: 300px;
 background-color:#fff;
 background-blend-mode: multiply;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.829);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.904);
 }
+.tenbox p{
+    font-size: 15px;
+    color: #000;
+    font-weight:200;
+}
+.tenbox h3,.tenbox h4{
+    font-size: 13px;
+    color: #000;
+    font-weight: 600;
+}
+.profile{
+    display: flex;
+    align-items: center;
+gap:15px;
+}
+.profile img{
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+}
+
 .elevensection{
     position: relative;
     height:auto;
@@ -490,7 +531,7 @@ background-blend-mode: multiply;
    padding: 230px 0px 75px 0px;
    justify-content: center;
    gap:30px;
-   background-color: #ffffff38;
+   background-color: #ffffff00;
 }
   
 .elevenbox{ 
@@ -644,4 +685,270 @@ margin: 15px 0px 0px 0px;
 .borderfourteen{
     border-top: 0.5px solid rgba(211, 211, 211, 0.226);
     width: 100%;
+}
+
+
+
+
+/*   media  */
+/* ----------- Mobile Devices ----------- */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .container {
+    margin-left: 20px;
+    padding-top: 40px;
+    font-size: 22px;
+  }
+
+  .para {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .secondsection {
+    grid-template-columns: 1fr 1fr;
+    margin: 100px 20px;
+    gap: 20px;
+  }
+
+  .coursor {
+    padding-left: 20px;
+  }
+
+  .coursor-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .coursor img {
+    margin: 20px auto;
+  }
+
+  .coursor p {
+    width: 90%;
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
+
+  .fourthsection {
+    grid-template-columns: 1fr;
+  }
+
+  .first-box {
+    width: 100%;
+    height: 300px;
+  }
+
+  .second-box {
+    padding-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  .fifthsection {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+
+  .fifth-one {
+    margin-left: 20px;
+  }
+
+  .edu-one {
+    flex-direction: column;
+  }
+
+  .sixthsection {
+    grid-template-columns: 1fr;
+  }
+
+  .sevenouter {
+    margin: 30px 20px;
+    height: auto;
+  }
+
+  .seventwo {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+  }
+
+  .sevenbottom {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+  }
+
+  .tensection {
+    flex-direction: column;
+    gap: 30px;
+    bottom: auto;
+  }
+
+  .elevencontainer {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    padding: 50px 20px;
+  }
+
+  .twelvesection {
+    grid-template-columns: 1fr;
+  }
+
+  .innerconatiner12 {
+    width: 80%;
+    align-items: center;
+  }
+
+  .thirteensection {
+    position: static;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    margin: 30px auto;
+  }
+
+  .fourteensection {
+    padding: 40px 20px;
+  }
+
+  .image-scroller {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .image-scroller img {
+    width: 240px;
+    height: 200px;
+  }
+}
+
+
+/* ----------- Tablets ----------- */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  nav {
+    gap: 20px;
+  }
+
+  .container {
+    margin-left: 40px;
+    font-size: 26px;
+  }
+
+  .para {
+    width: 80%;
+    font-size: 18px;
+  }
+
+  .secondsection {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    margin: 150px 40px;
+    gap: 30px;
+  }
+
+  .coursor {
+    padding-left: 40px;
+  }
+
+  .coursor-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .fourthsection {
+    grid-template-columns: 1fr;
+  }
+
+  .first-box {
+    width: 100%;
+    height: 350px;
+  }
+
+  .second-box {
+    padding-left: 40px;
+  }
+
+  .fifthsection {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+
+  .fifth-one {
+    margin-left: 40px;
+  }
+
+  .edu-one {
+    flex-direction: column;
+  }
+
+  .sixthsection {
+    grid-template-columns: 1fr;
+  }
+
+  .sevenouter {
+    margin: 30px 40px;
+    height: auto;
+  }
+
+  .seventwo {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+  }
+
+  .sevenbottom {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .tensection {
+    flex-direction: column;
+    gap: 40px;
+    bottom: auto;
+  }
+
+  .elevencontainer {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    padding: 100px 20px;
+  }
+
+  .twelvesection {
+    grid-template-columns: 1fr;
+  }
+
+  .innerconatiner12 {
+    width: 60%;
+  }
+
+  .thirteensection {
+    position: static;
+    width: 80%;
+    height: auto;
+    padding: 30px;
+    margin: 50px auto;
+  }
+
+  .fourteensection {
+    padding: 50px 20px;
+  }
+
+  .image-scroller {
+    width: 100%;
+  }
+
+  .image-scroller img {
+    width: 280px;
+    height: 220px;
+  }
 }
